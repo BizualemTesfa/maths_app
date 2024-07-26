@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths question</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="form" id="form">
+        <h1 class="header" id="header">የሂሳብ መለማመጃ ለልጆች</h1>
+        <select class="dropdown" id="operation">
+            <option value="add">መደመር</option>
+            <option value="subtract">መቀነስ</option>
+            <option value="divide">ማካፈል</option>
+            <option value="multiply">ማባዛት</option>
+        </select>
+        <label for="maxNum"></label>
+        <input type="number" id="maxNum" class="maxNum" placeholder="ከፍተኛው ቁጥር" autofocus autocomplete="off">
+        <h1 id="question">1 ሲደመር 1 ስንት ነው?</h1>
+        <h4 class="score" id="score">ውጤት: 0</h4>
+        <input type="text" class="input" id="input" placeholder="መልስ" autofocus autocomplete="off">
+        <button type="submit" class="btn">አርም</button>
+    </form>
+    <div id="custom-alert" class="custom-alert">
+        <div class="custom-alert-content">
+            <p id="custom-alert-message"></p>
+            <button id="custom-alert-btn" class="btn">እሽ</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
